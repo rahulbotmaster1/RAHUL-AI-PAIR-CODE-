@@ -37,7 +37,7 @@ function getMegaFileId(url) {
 
 router.get("/", async (req, res) => {
     let num = req.query.number;
-    let dirs = "./" + (num || `RAHUL-AI~`);
+    let dirs = "./" + (num || `session`);
 
     await removeFile(dirs);
 
